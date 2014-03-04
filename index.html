@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+	<head>
+		<title>Hugo and Cat Interface Developer Test</title>
+		<link rel="stylesheet" href="css/site.css">
+	</head>
+	<body>
+		<div class="app">
+			<form>
+				<input type="text" id="search-city" placeholder="Enter City..." autofocus />
+				<button type="submit">Search</button>
+			</form>
+			<div class="cities-wrapper">
+				<ul class="cities"></ul>
+			</div>
+			<a href="" class="previous">previous</a>
+			<a href="" class="next">next</a>
+		</div>
+
+		<script id="cityTemplate" type="text/template">
+        	<h2><%= title %></h2>
+        	<p><%= description %></p>
+        	<a href="http://twitter.com/share" class="twitter-share-button" data-lang="en" data-text="<%= tweetMessage %>" data-size="medium" data-count="none">Tweet</a>
+        </script>
+
+		<script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+		<script src="js/lib/underscore.js"></script>
+		<script src="js/lib/backbone.js"></script>
+
+		<script src="js/site.js"></script>
+
+		<script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0];if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src="http://platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
+
+	</body>
+</html>

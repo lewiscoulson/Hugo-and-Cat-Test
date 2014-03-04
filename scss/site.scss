@@ -1,0 +1,107 @@
+* {
+	margin: 0;
+	padding: 0;
+}
+
+body {
+	background: #f9f9f9;
+	color: #333;
+	font-family: arial, sans-serif;
+}
+
+.app {
+	position: relative;
+
+	width: 400px;
+	margin: 50px auto;
+	padding: 15px;
+
+	background: #fff;
+
+	box-shadow: 0 0 15px #ccc;
+}
+
+form {
+	overflow: hidden;
+	margin: 0 auto;
+
+	input, button {
+		float: left;
+
+		padding: .5em;
+		border: none;
+
+		background: #666;
+		color: #999;
+		font-size: 1.5em;
+	}
+
+	button {
+		border-left: 1px solid #fff;
+		cursor: pointer;
+	}
+}
+
+.cities-wrapper {
+	position: relative;
+
+	margin-top: 30px;
+	width: 370px;
+	min-height: 500px;
+	overflow: hidden;
+}
+
+.cities {
+	position: absolute;
+	top: 0;
+	left: 0;
+
+	width: 99999px;
+
+	overflow: hidden;
+
+	list-style: none;
+}
+
+.city {
+	float: left;
+
+	width: 370px;
+
+	h2, p {
+		color: #666;
+		font-family: georgia;
+	}
+
+	h2 {
+		margin-bottom: 1em;
+
+		font-style: italic;
+	}
+
+	p {
+		line-height: 1.5em;
+	}
+}
+
+.next, .previous {
+	position: absolute;
+	top: 200px;
+
+	width: 23px;
+	height: 38px;
+
+	text-indent: -99999em;
+}
+
+.next {
+	right: -50px;
+
+	background: url(../img/next.png) no-repeat 0 0;	
+}
+
+.previous {
+	left: -50px;
+
+	background: url(../img/previous.png) no-repeat 0 0;
+}
